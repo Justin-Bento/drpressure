@@ -7,5 +7,9 @@ export default defineConfig({
   experimental: {
     viewTransitions: true,
   },
-  integrations: [tailwind(), compress()],
+  integrations: [
+    tailwind(),
+    compress(),
+    // ...
+  ],
 });
