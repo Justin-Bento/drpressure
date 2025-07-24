@@ -14,6 +14,7 @@
     "@astrojs/tailwind": "4.0.0",
     "@fontsource/inter": "5.0.8",
     "@playform/compress": "^0.2.0",
+    "@tailwindcss/vite": "^4.1.11",
     "@types/alpinejs": "3.7.2",
     "alpinejs": "3.12.3",
     "astro": "2.10.13",
