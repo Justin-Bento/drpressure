@@ -1,6 +1,6 @@
-# Stone: Astro Theme
+# Dr. Pressure
 
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+This is a company website for Dr. Pressure. It is a pressure washing company based out of Nanaimo, British Columbia, Canada. Operating all over Vancouver Island in Nanaimo, Campbell River, Courtney, Comox, Duncan, Salt Spring Island, Victoria and Ladysmith. Our services include: driveways, home exteriors, moss removal, patios, decks and other outdoor areas.
 
 ## Key Features:
 
@@ -17,40 +17,6 @@ Stone is a free and open-source Astro theme specially designed for Business, Mar
 - **Google Fonts**
 - **Remix Icons**
 - Free Updates
-
-## Getting Started
-
-### Requirements
-
-- Basic knowledge of Astro, HTML and CSS.
-- Text editor (We recommend Visual Studio Code)
-- Node.js 18 or higher.
-
-### Install dependencies
-
-Navigate to your project folder and install its dependencies:
-
-```
-npm install
-```
-
-### Start
-
-Once the installation is done, you can now run your app:
-
-```
-npm run dev
-```
-
-This runs the app in development mode. Open http://localhost:3000 to view it in the browser.
-
-### Build
-
-```
-npm run build
-```
-
-This builds the app for production to the `./dist/` folder.
 
 ## Project Structure
 
@@ -94,3 +60,7 @@ If you have any questions or suggestions do not hesitate to contact me.
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+## Acknowledgementss
+
+Thank you Astro.js for creating the stone template. It is a great open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
