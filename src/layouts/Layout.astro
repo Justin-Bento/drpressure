@@ -1,6 +1,6 @@
 ---
 import '@fontsource-variable/inter';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
 import '../styles/global.css';
@@ -25,7 +25,7 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body
     class="bg-stone-50 text-stone-950 antialiased transition dark:bg-stone-950 dark:text-stone-200"
