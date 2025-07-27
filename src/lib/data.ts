@@ -113,3 +113,21 @@ export const stats = [
     value: "'9'",
   },
 ];
+// About - Teams
+export const team = [
+  {
+    name: 'Floyd Lowe',
+    image: '/assets/team-1.webp',
+    job: 'Senior Designer',
+  },
+  {
+    name: 'Emma Dorsey',
+    image: '/assets/team-2.webp',
+    job: 'Principal Designer',
+  },
+  {
+    name: 'Emily Mitchell',
+    image: '/assets/team-3.webp',
+    job: 'Senior Developer',
+  },
+];
