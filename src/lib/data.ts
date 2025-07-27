@@ -1,0 +1,22 @@
+export const links = [
+  {
+    ref: '01',
+    name: 'Home',
+    href: '/',
+  },
+  {
+    ref: '02',
+    name: 'About',
+    href: '/about',
+  },
+  {
+    ref: '03',
+    name: 'Pricing',
+    href: '/pricing',
+  },
+  {
+    ref: '04',
+    name: 'Contact',
+    href: '/contact',
+  },
+];
