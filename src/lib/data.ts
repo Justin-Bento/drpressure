@@ -92,3 +92,24 @@ export const bottomLinks = [
     ],
   },
 ];
+
+// About - Mission
+
+export const stats = [
+  {
+    name: 'Years',
+    value: '9',
+  },
+  {
+    name: 'Experts',
+    value: '15',
+  },
+  {
+    name: 'Projects',
+    value: '122',
+  },
+  {
+    name: 'Awards',
+    value: "'9'",
+  },
+];
