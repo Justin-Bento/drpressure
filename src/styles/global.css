@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: 'Inter Variable', sans-serif;
-
+  --font-urbanist: 'Urbanist', sans-serif;
   --color-current: currentColor;
   --color-transparent: transparent;
   --color-white: #ffffff;

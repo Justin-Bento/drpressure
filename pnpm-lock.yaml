@@ -20,6 +20,9 @@ importers:
       '@fontsource/inter':
         specifier: ^5.0.18
         version: 5.2.6
+      '@fontsource/urbanist':
+        specifier: ^5.2.6
+        version: 5.2.6
       alpinejs:
         specifier: ^3.14.9
         version: 3.14.9
@@ -265,6 +268,9 @@ packages:
 
   '@fontsource/inter@5.2.6':
     resolution: {integrity: sha512-CZs9S1CrjD0jPwsNy9W6j0BhsmRSQrgwlTNkgQXTsAeDRM42LBRLo3eo9gCzfH4GvV7zpyf78Ozfl773826csw==}
+
+  '@fontsource/urbanist@5.2.6':
+    resolution: {integrity: sha512-snp1FO9o+ZvK46Kd6YbxOSDnjIKm6I7rtAbiul39swXTQkG7tC+jHqLBFKXk1w0opxNwqNqZQsBfyUltAeJc3A==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1979,6 +1985,8 @@ snapshots:
   '@fontsource-variable/inter@5.2.6': {}
 
   '@fontsource/inter@5.2.6': {}
+
+  '@fontsource/urbanist@5.2.6': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
