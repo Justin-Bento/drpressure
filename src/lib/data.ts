@@ -174,3 +174,29 @@ export const features = [
       'From walkways to retaining walls, our comprehensive pressure washing services clean and restore all your outdoor surfaces, creating a cohesive, beautiful property appearance.',
   },
 ];
+
+// Home - Testimonials
+
+export const testimonials = [
+  {
+    name: 'Rebecca Hayes',
+    description: 'Designer',
+    image: '/assets/testimonial-1.webp',
+    message:
+      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+  },
+  {
+    name: 'Rosa Spencer',
+    description: 'Team Leader',
+    image: '/assets/testimonial-2.webp',
+    message:
+      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+  },
+  {
+    name: 'Christina Upton',
+    description: 'Manager',
+    image: '/assets/testimonial-3.webp',
+    message:
+      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+  },
+];
