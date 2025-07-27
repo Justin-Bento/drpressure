@@ -241,3 +241,40 @@ export const questions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.',
   },
 ];
+
+// Pricing - Pricing
+
+export const pricing = [
+  {
+    name: 'Basic',
+    description: 'For development, staging, and small production projects.',
+    periodicity: '/month',
+    price: '$10',
+    action: 'Buy Now',
+    features: ['5 Seats', '1,000 Projects', 'Lifetime access', 'Community Support'],
+  },
+  {
+    name: 'Pro',
+    description: 'For high-scale and mission critical projects.',
+    isFlagged: true,
+    periodicity: '/month',
+    price: '$25',
+    action: 'Buy Now',
+    features: ['10 Seats', '10,000 Projects', 'Lifetime access', 'Email Support', 'Free updates'],
+  },
+  {
+    name: 'Team',
+    description: 'For teams with more security, support, and performance needs.',
+    periodicity: '',
+    price: 'Custom',
+    action: 'Buy Now',
+    features: [
+      'Unlimited Seats',
+      'Unlimited Projects',
+      'Lifetime access',
+      'Email and Chat Support',
+      'High-Performance',
+      'Free updates',
+    ],
+  },
+];
