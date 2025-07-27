@@ -133,3 +133,44 @@ export const team = [
 ];
 
 // Home - Contact
+
+// Home - Expertise
+
+export const features = [
+  {
+    id: 'expertise-1',
+    name: 'Driveway Cleaning',
+    description:
+      "Professional pressure washing removes years of oil stains, dirt, and grime, restoring your driveway's original appearance and boosting your home's curb appeal across Vancouver Island.",
+  },
+  {
+    id: 'expertise-2',
+    name: 'Home Exterior Washing',
+    description:
+      "Expert pressure washing safely removes dirt, mildew, and weathering from siding, brick, and stucco, protecting your investment and enhancing your property's value throughout Nanaimo and beyond.",
+  },
+  {
+    id: 'expertise-3',
+    name: 'Moss Removal',
+    description:
+      'Professional moss removal protects your roof, walkways, and outdoor surfaces from costly damage while restoring safety and appearance to your Vancouver Island property.',
+  },
+  {
+    id: 'expertise-4',
+    name: 'Patio Cleaning',
+    description:
+      'Professional pressure washing removes stubborn stains, algae, and built-up grime from concrete, stone, and brick patios, creating the perfect outdoor entertaining space.',
+  },
+  {
+    id: 'expertise-5',
+    name: 'Deck Restoration',
+    description:
+      'Expert pressure washing and cleaning removes weathering, mildew, and discoloration from wood and composite decks, preparing them for staining or simply revealing their natural charm.',
+  },
+  {
+    id: 'expertise-6',
+    name: 'General Outdoor Area Cleaning',
+    description:
+      'From walkways to retaining walls, our comprehensive pressure washing services clean and restore all your outdoor surfaces, creating a cohesive, beautiful property appearance.',
+  },
+];
