@@ -6,6 +6,8 @@ import react from '@astrojs/react';
 import markdoc from '@astrojs/markdoc';
 import keystatic from '@keystatic/astro';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -14,6 +16,7 @@ export default defineConfig({
       // ...
     ],
   },
+
   integrations: [
     alpinejs(),
     react(),
@@ -21,4 +24,6 @@ export default defineConfig({
     keystatic(),
     // ...
   ],
+
+  adapter: vercel(),
 });

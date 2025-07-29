@@ -16,6 +16,7 @@
     "@astrojs/alpinejs": "^0.4.8",
     "@astrojs/markdoc": "^0.15.2",
     "@astrojs/react": "^4.3.0",
+    "@astrojs/vercel": "^8.2.3",
     "@fontsource-variable/inter": "^5.2.6",
     "@fontsource/inter": "^5.0.18",
     "@fontsource/urbanist": "^5.2.6",
