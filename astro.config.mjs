@@ -8,6 +8,17 @@ import keystatic from '@keystatic/astro';
 
 // https://astro.build/config
 export default defineConfig({
-  vite: { plugins: [tailwindcss()] },
-  integrations: [alpinejs(), react(), markdoc(), keystatic()],
+  vite: {
+    plugins: [
+      tailwindcss(),
+      // ...
+    ],
+  },
+  integrations: [
+    alpinejs(),
+    react(),
+    markdoc(),
+    keystatic(),
+    // ...
+  ],
 });
