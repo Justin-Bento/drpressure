@@ -1,6 +1,8 @@
 ---
 import Heading from '../components/Heading.astro';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+const posts = await getCollection('posts');
 ---
 
 <Layout
@@ -8,4 +10,24 @@ import Layout from '../layouts/Layout.astro';
   title="Blog · Stone"
 >
   <Heading title="Blog" subtext="Choose the article that best suits your needs" />
+  <section class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <ul class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      {
+        posts.map((post) => (
+          <li class="rounded-3xl bg-blue-500/10 p-8 dark:bg-blue-400/10">
+            <a href={`/posts/${post.slug}`} class="text-3xl font-medium">
+              {post.data.title}
+              <span class="absolute inset-0 hover:underline" />
+            </a>
+            <p class="mt-3 line-clamp-3 leading-[1.75] tracking-[0.01rem] text-balance text-stone-950/70 dark:text-stone-200/70">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio provident unde placeat
+              eaque ratione sit animi necessitatibus facere reprehenderit veritatis quia
+              voluptatibus fugiat omnis sunt, ab, libero, quam alias veniam?
+            </p>
+            <p class="mt-5 text-sm text-stone-950/70 dark:text-stone-200/70">Read Article &rarr;</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>

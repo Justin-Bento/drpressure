@@ -1,5 +1,5 @@
 ---
-import Cta from '../components/pricing/Cta.astro';
+import Cta from '../components/Cta.astro';
 import Faq from '../components/pricing/Faq.astro';
 import Heading from '../components/Heading.astro';
 import PricingTable from '../components/pricing/PricingTable.astro';
@@ -13,5 +13,5 @@ import Layout from '../layouts/Layout.astro';
   <Heading title="Pricing" subtext="Choose the price that best suits your needs." />
   <PricingTable />
   <Faq />
-  <Cta />
+<Cta title="Still have questions?" action="Please describe your case to receive the most accurate advice." link={"/contact"} linkText={"Contact us"} />
 </Layout>

@@ -1,0 +1,26 @@
+---
+const {title, action, link, linkText} = Astro.props
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8">
+    <div
+      class="bg-navy-blue-500/10 flex flex-col items-center gap-8 rounded-3xl px-5 py-16 sm:gap-10 dark:bg-blue-400/10"
+    >
+      <div class="flex flex-col gap-4 sm:gap-6">
+        <h2 class="mx-auto max-w-xl text-3xl font-medium tracking-tight capitalize sm:text-4xl">
+          {title}
+        </h2>
+        <p class="mx-auto max-w-2xl text-lg text-stone-950/70 dark:text-stone-200/70">
+          {action}
+        </p>
+      </div>
+      <a
+        href={link}
+        class="'focus-visible:outline' applies the same CSS properties as 'focus-visible:outline-2'.focus-visible:outline-2 bg-navy-blue-600 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition hover:bg-blue-700 focus-visible:outline-offset-2 focus-visible:outline-blue-600 dark:bg-blue-400 dark:text-blue-950 dark:hover:bg-blue-300 dark:focus-visible:outline-blue-400"
+      >
+        {linkText}
+      </a>
+    </div>
+  </div>
+</section>
