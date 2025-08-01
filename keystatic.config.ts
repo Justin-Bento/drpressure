@@ -15,5 +15,14 @@ export default config({
         content: fields.markdoc({ label: 'Content' }),
       },
     }),
+    testimonials: collection({
+      label: 'Testimonials',
+      slugField: 'author',
+      schema: {
+        author: fields.text({ label: 'Author' }),
+        quote: fields.text({ label: 'Quote', multiline: true }),
+        avatar: fields.image({ label: 'Avatar', directory: 'public/images/avatars' }),
+      },
+    }),
   },
 });
