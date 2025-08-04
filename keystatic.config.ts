@@ -17,7 +17,7 @@ export default config({
     }),
     testimonials: collection({
       label: 'Testimonials',
-      path: 'src/content/posts/testimonials/*',
+      path: 'src/content/testimonials/*',
       slugField: 'name',
       schema: {
         name: fields.text({ label: 'Author' }),
