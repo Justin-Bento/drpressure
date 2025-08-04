@@ -17,11 +17,12 @@ export default config({
     }),
     testimonials: collection({
       label: 'Testimonials',
-      slugField: 'author',
+      slugField: 'name',
       schema: {
-        author: fields.text({ label: 'Author' }),
-        quote: fields.text({ label: 'Quote', multiline: true }),
-        avatar: fields.image({ label: 'Avatar', directory: 'public/images/avatars' }),
+        name: fields.text({ label: 'Author' }),
+        description: fields.text({ label: 'Quote' }),
+        message: fields.text({ label: 'Quote', multiline: true }),
+        image: fields.image({ label: 'Avatar', directory: 'public/images/avatars' }),
       },
     }),
   },

@@ -22,4 +22,5 @@ const Testimonials = defineCollection({
 
 export const collections = {
   posts,
+  Testimonials,
 };
