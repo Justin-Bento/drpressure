@@ -53,6 +53,13 @@ Inside the project, you'll see the following folders and files:
 
 Ready to build and deploy your site? Follow the [official documentation](https://docs.astro.build/en/guides/deploy/).
 
+## Docekr Local Deployment
+
+```bash
+docker build -t drpressure:latest .
+docker run -p 4321:4321 drpressure:latest
+```
+
 ## Support
 
 If you have any questions or suggestions do not hesitate to contact me.
