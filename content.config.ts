@@ -9,6 +9,17 @@ const posts = defineCollection({
     }),
 });
 
+const Testimonials = defineCollection({
+  loader: glob({ pattern: '**/*.mdoc', base: './src/content/testimonials' }),
+  schema: () =>
+    z.object({
+      name: z.string(),
+      description: z.string(),
+      image: z.string(),
+      message: z.string(),
+    }),
+});
+
 export const collections = {
   posts,
 };
