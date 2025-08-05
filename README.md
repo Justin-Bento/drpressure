@@ -30,6 +30,7 @@ Inside the project, you'll see the following folders and files:
 │   ├── layouts/
 │   └── pages/
 │   └── content/
+│       └── / collections
 ├── .prettierrc
 ├── astro.config.mjs
 ├── content.config.ts
