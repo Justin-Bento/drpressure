@@ -1,4 +1,4 @@
-import { config, fields, collection } from '@keystatic/core';
+import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
   storage: {
@@ -24,6 +24,15 @@ export default config({
         description: fields.text({ label: 'Quote' }),
         message: fields.text({ label: 'Quote', multiline: true }),
         image: fields.image({ label: 'Avatar', directory: 'public/images/avatars' }),
+      },
+    }),
+  },
+  singletons: {
+    homepage: singleton({
+      label: 'HomeTitle',
+      path: 'src/content/singleton/homepage',
+      schema: {
+        headline: fields.text({ label: 'HomeText' }),
       },
     }),
   },
