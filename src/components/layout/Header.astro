@@ -1,5 +1,9 @@
 ---
+import { createReader } from '@keystatic/core/reader';
 import { links } from '../../lib/data';
+import keystaticConfig from '../../../keystatic.config';
+const reader = createReader('', keystaticConfig);
+const homepageData = await reader.singletons.homepage.read();
 ---
 
 <header
@@ -17,7 +21,9 @@ import { links } from '../../lib/data';
         class="rounded-md focus-visible:outline-2 focus-visible:outline-stone-950 dark:group-focus-visible:outline-stone-200"
       >
         <span class="sr-only">Stone</span>
-        <a href="/" class="font-urbanist text-2xl text-black dark:text-white">Dr. Pressure</a>
+        <a href="/" class="font-urbanist text-2xl text-black dark:text-white"
+          >{homepageData.headline}</a
+        >
       </a>
     </div>
 
@@ -125,11 +131,7 @@ import { links } from '../../lib/data';
               href={link.href}
               class="group inline-flex py-6 text-3xl font-medium tracking-tight text-stone-950 transition focus-visible:outline-none sm:py-8 sm:text-4xl dark:text-stone-200"
             >
-              <div class="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline-2 group-focus-
-    Maximize curb appeal through surface refreshing.
-    Protect your investment by preventing degradation.
-    Eliminate mold and mildew.
-visible:outline-offset-2 group-focus-visible:outline-stone-950 dark:group-focus-visible:outline-stone-200">
+              <div class="group-focus- Maximize curb appeal through surface refreshing. Protect your investment by preventing degradation. Eliminate mold and mildew. visible:outline-offset-2 flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline-2 group-focus-visible:outline-stone-950 dark:group-focus-visible:outline-stone-200">
                 <div class="flex items-center gap-6">
                   <span class="text-xs">{link.ref}</span>
                   <span class="group-hover:underline">{link.name}</span>
