@@ -37,7 +37,10 @@ export default config({
           fields.object({
             name: fields.text({ label: 'Getting Your Quote' }),
             message: fields.text({ label: 'Step Explination', multiline: true }),
-          })
+          }),
+          {
+            label: 'Services',
+          }
         ),
       },
     }),
