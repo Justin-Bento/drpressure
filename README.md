@@ -32,6 +32,7 @@ Inside the project, you'll see the following folders and files:
 │   └── content/
 │       └── / collections
 │       └── / singletons
+│   └── emv.d.ts
 ├── .prettierrc
 ├── astro.config.mjs
 ├── content.config.ts
