@@ -33,6 +33,12 @@ export default config({
       path: 'src/content/singleton/homepage',
       schema: {
         headline: fields.text({ label: 'HomeText' }),
+        services: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Getting Your Quote' }),
+            message: fields.text({ label: 'Step Explination', multiline: true }),
+          })
+        ),
       },
     }),
     Aboutpage: singleton({
