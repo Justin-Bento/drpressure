@@ -31,10 +31,12 @@ Inside the project, you'll see the following folders and files:
 │   └── pages/
 ├── .prettierrc
 ├── astro.config.mjs
-├── package-lock.json
+├── content.config.ts
+├── Dockerfile
+├── keystatic.config.ts
 ├── package.json
 ├── README.md
-├── tailwind.config.cjs
+├── pnpm-lock.yaml
 └── tsconfig.json
 ```
 
