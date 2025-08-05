@@ -52,6 +52,7 @@ Inside the project, you'll see the following folders and files:
 - `.prettierrc` - Prettier configuration file.
 - `astro.config.mjs` - Astro configuration file.
 - `content.config.ts` - Astro content configuration file.
+- `Dockerfile` - Contains instructions for building your source code.
 - `keystatic.config.ts` - Keystatic configuration file.
 - `package.json` - File used by JavaScript package managers to manage your dependencies. It also defines the scripts that are commonly used to run Astro.
 - `tailwind.config.cjs` - Tailwind configuration file. The theme section is where you define your color palette and fonts.
