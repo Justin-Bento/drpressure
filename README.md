@@ -46,6 +46,7 @@ Inside the project, you'll see the following folders and files:
 - `public/*` - Any static assets (images, fonts, icons, ...)
 - `src/*` - Project source code (components, pages, ...)
 - `src/components/*` - Reusable Astro components used to build pages.
+- `src/content/*` - Astro folder to store content tollections to help organize and query your documents enable Intellisense and type checking in your editor, and provide automatic TypeScript type-safety for all of your content.
 - `src/layouts/*` - Astro components that define the UI structure shared by one or more pages..
 - `src/pages/*` - Astro components used to create new pages on your site. Each page is exposed as a route based on its file name.
 - `.prettierrc` - Prettier configuration file.
