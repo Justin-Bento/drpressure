@@ -51,6 +51,17 @@ export default config({
             label: 'Expertise',
           }
         ),
+        testimonials: fields.array(
+          fields.object({
+            quote: fields.text({ label: 'Quote', multiline: true }),
+            autohr: fields.text({ label: 'Author.' }),
+            title: fields.text({ label: 'Position Title.' }),
+            avatar: fields.image({ label: 'Avatar' }),
+          }),
+          {
+            label: 'testimonials',
+          }
+        ),
       },
     }),
     Aboutpage: singleton({
