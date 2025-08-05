@@ -29,7 +29,7 @@ export default config({
   },
   singletons: {
     homepage: singleton({
-      label: 'HomeTitle',
+      label: 'Home',
       path: 'src/content/singleton/homepage',
       schema: {
         headline: fields.text({ label: 'HomeText' }),
@@ -51,6 +51,7 @@ export default config({
             label: 'Expertise',
           }
         ),
+        about: fields.text({ label: 'About Section', multiline: true }),
         testimonials: fields.array(
           fields.object({
             quote: fields.text({ label: 'Quote', multiline: true }),
