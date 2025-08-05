@@ -42,6 +42,15 @@ export default config({
             label: 'Services',
           }
         ),
+        expertise: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Expertise Title' }),
+            message: fields.text({ label: 'Explain the expertise.', multiline: true }),
+          }),
+          {
+            label: 'Expertise',
+          }
+        ),
       },
     }),
     Aboutpage: singleton({
