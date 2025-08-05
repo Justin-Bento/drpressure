@@ -31,6 +31,7 @@ Inside the project, you'll see the following folders and files:
 │   └── pages/
 │   └── content/
 │       └── / collections
+│       └── / singletons
 ├── .prettierrc
 ├── astro.config.mjs
 ├── content.config.ts
