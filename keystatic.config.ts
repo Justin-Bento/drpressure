@@ -98,5 +98,16 @@ export default config({
         ),
       },
     }),
+    contact: singleton({
+      label: 'Contact',
+      path: 'src/content/singleton/contactPage',
+      schema: {
+        headline: fields.text({ label: 'Title' }),
+        summary: fields.text({ label: 'Summary' }),
+        location: fields.text({ label: 'Comopany Address' }),
+        phoneNumber: fields.text({ label: 'Phone Number' }),
+        companyEmail: fields.text({ label: 'Email' }),
+      },
+    }),
   },
 });
