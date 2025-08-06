@@ -2,7 +2,6 @@
 import About from '../components/home/About.astro';
 import Cta from '../components/Cta.astro';
 import Expertise from '../components/home/Expertise.astro';
-import Hero from '../components/home/Hero.astro';
 import Services from '../components/home/Services.astro';
 import Testimonials from '../components/home/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
@@ -12,10 +11,49 @@ import Layout from '../layouts/Layout.astro';
   description="We provide expert pressure washing for Vancouver Island homes. Serving Nanaimo, Victoria, Duncan & more. Driveways, decks, exteriors. Call today"
   title="Dr Pressure · Pressure Washing"
 >
-  <Hero />
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col gap-16">
+        <div class="flex flex-col items-start gap-8 sm:gap-10">
+          <div class="flex max-w-xl flex-col items-start gap-4 sm:gap-6">
+            <h1
+              class="tracknig-wide text-4xl leading-[1.15] font-[600] tracking-tight text-balance capitalize sm:text-5xl lg:text-6xl"
+            >
+              Professional Pressure Washing Across Vancouver Island!
+            </h1>
+            <p
+              class="text-lg leading-[2] tracking-wide text-balance text-stone-950/70 sm:text-xl dark:text-stone-200/70"
+            >
+              From Nanaimo to Salt Spring Island, we bring the pressure that gets results.
+              Driveways, decks, patios, and home exteriors restored to perfection.
+            </p>
+          </div>
+          <a
+            href="/pricing"
+            class="bg-navy-blue-700 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 dark:bg-blue-400 dark:text-blue-950 dark:hover:bg-blue-300 dark:focus-visible:outline-blue-400"
+          >
+            Book a Quote
+          </a>
+        </div>
+        <img
+          class="h-auto w-full rounded-3xl"
+          width="1280"
+          height="640"
+          src="/assets/hero.webp"
+          alt="Photo by zibik on Unsplash"
+        />
+      </div>
+    </div>
+  </section>
+  <!-- End of Hero Section on Homepage -->
   <Services />
   <Expertise />
   <About />
   <Testimonials />
-  <Cta title="Get Your Free Quote Today" action="See the Difference Professional Pressure Washing Makes by booking your service today and discover what your property really looks like underneath." link={"/contact"} linkText={"Contact us"} />
+  <Cta
+    title="Get Your Free Quote Today"
+    action="See the Difference Professional Pressure Washing Makes by booking your service today and discover what your property really looks like underneath."
+    link={'/contact'}
+    linkText={'Contact us'}
+  />
 </Layout>
