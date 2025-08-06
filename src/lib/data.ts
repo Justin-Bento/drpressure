@@ -243,6 +243,26 @@ export const questions = [
 ];
 
 // Pricing - Pricing
+export const services = [
+  {
+    step: '01',
+    name: 'Book a Call',
+    description:
+      "Transform Your Driveway from Stained to Stunning Professional pressure washing removes years of oil stains, dirt, and grime, restoring your driveway's original appearance and boosting your home's curb appeal across Vancouver Island.",
+  },
+  {
+    step: '02',
+    name: 'Get a Quote',
+    description:
+      "Expert pressure washing safely removes dirt, mildew, and weathering from siding, brick, and stucco, protecting your investment and enhancing your property's value throughout Nanaimo and beyond.",
+  },
+  {
+    step: '03',
+    name: 'Start When Free',
+    description:
+      'Professional moss removal protects your roof, walkways, and outdoor surfaces from costly damage while restoring safety and appearance to your Vancouver Island property.',
+  },
+];
 
 export const pricing = [
   {
