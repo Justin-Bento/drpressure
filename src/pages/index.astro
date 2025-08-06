@@ -2,9 +2,28 @@
 import About from '../components/home/About.astro';
 import Cta from '../components/Cta.astro';
 import Expertise from '../components/home/Expertise.astro';
-import Services from '../components/home/Services.astro';
 import Testimonials from '../components/home/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
+const services = [
+  {
+    step: '01',
+    name: 'Book a Call',
+    description:
+      "Transform Your Driveway from Stained to Stunning Professional pressure washing removes years of oil stains, dirt, and grime, restoring your driveway's original appearance and boosting your home's curb appeal across Vancouver Island.",
+  },
+  {
+    step: '02',
+    name: 'Get a Quote',
+    description:
+      "Expert pressure washing safely removes dirt, mildew, and weathering from siding, brick, and stucco, protecting your investment and enhancing your property's value throughout Nanaimo and beyond.",
+  },
+  {
+    step: '03',
+    name: 'Start When Free',
+    description:
+      'Professional moss removal protects your roof, walkways, and outdoor surfaces from costly damage while restoring safety and appearance to your Vancouver Island property.',
+  },
+];
 ---
 
 <Layout
@@ -46,8 +65,29 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
   <!-- End of Hero Section on Homepage -->
-  <Services />
-  <Expertise />
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col gap-12 sm:gap-16">
+        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+        <div class="grid gap-8 lg:grid-cols-3">
+          {
+            services.map((service) => (
+              <div class="bg-navy-blue-500/10 flex flex-col gap-12 rounded-3xl px-6 py-8 dark:bg-blue-400/10">
+                <p class="text-sm">{service.step}</p>
+                <div class="flex flex-col gap-4">
+                  <h3 class="text-xl font-medium">{service.name}</h3>
+                  <p class="text-base text-stone-950/70 sm:text-lg dark:text-stone-200/70">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Services Section on Homepage -->
   <About />
   <Testimonials />
   <Cta
