@@ -1,7 +1,7 @@
 ---
 import { createReader } from '@keystatic/core/reader';
-import { links } from '../../lib/data';
-import keystaticConfig from '../../../keystatic.config';
+import { links } from '../lib/data';
+import keystaticConfig from '../../keystatic.config';
 const reader = createReader('', keystaticConfig);
 const homepageData = await reader.singletons.homepage.read();
 ---
