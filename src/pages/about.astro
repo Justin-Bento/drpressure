@@ -1,6 +1,6 @@
 ---
 import Heading from '../components/Heading.astro';
-import Mission from '../components/about/Mission.astro';
+import { stats } from '../lib/data';
 import Team from '../components/about/Team.astro';
 import Values from '../components/about/Values.astro';
 import Layout from '../layouts/Layout.astro';
@@ -11,7 +11,61 @@ import Layout from '../layouts/Layout.astro';
   title="About · Stone"
 >
   <Heading title="About" subtext="Our cleaning refreshes faded concrete to its original color." />
-  <Mission />
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
+        <img
+          class="object-fit mx-auto h-auto w-full max-w-xl rounded-3xl"
+          width="576"
+          height="864"
+          src="/assets/the-graphic-space-PkkT4fOlh94-unsplash.jpg"
+          alt="Our experts working together"
+        />
+        <div class="flex flex-col gap-10">
+          <!-- Mission description -->
+          <div class="space-y-8 sm:space-y-12">
+            <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
+            <div
+              class="space-y-6 *:text-base *:leading-[1.7] *:text-stone-950/70 *:dark:text-stone-200/70"
+            >
+              <p>
+                Dr. Pressure was founded in [YYYY] with a simple mission: to restore and protect
+                Vancouver Island's natural beauty through exceptional cleaning services. We enhance
+                property value by boosting curb appeal, prolonging surface longevity, and
+                eliminating harmful contaminants creating healthier spaces for our community.
+              </p>
+              <p>
+                Our cleaning protocols combine cutting-edge technology with sustainable practices
+                to:
+                <ul class="ml-3 list-inside list-disc space-y-1.5 text-pretty">
+                  <li>Maximize curb appeal through surface refreshing.</li>
+                  <li class="">Protect your investment by preventing degradation.</li>
+                  <li>Eliminate mold and mildew.</li>
+                </ul>
+              </p>
+              <p>
+                Headquartered in Nanaimo, British Columbia, we proudly serve the entire Vancouver
+                Island region with consistent excellence from Campbell River to Victoria.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {
+              stats.map((stat) => (
+                <div class="rounded-3xl border border-stone-900/10 p-6 dark:border-stone-300/10">
+                  <dt class="text-base">{stat.name}</dt>
+                  <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Mision Section for About Page -->
   <Values />
   <Team />
 </Layout>
