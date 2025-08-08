@@ -1,2 +1,33 @@
-values: []
-team: []
+headline: Our cleaning refreshes faded concrete to its original color.
+years: 2025-08-08
+experts: 10
+projects: 100
+awards: 1
+values:
+  - name: Excellence
+    message: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.'
+  - name: Innovation
+    message: >-
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. 
+  - name: Teamwork
+    message: >-
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+  - name: Respect
+    message: >-
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+team:
+  - name: Floyd Lowe
+    position: Project Manager
+  - name: Emma Dorsey
+    position: Company Accountant
+  - name: Emily Mitchell
+    position: Website Developer & Designer
