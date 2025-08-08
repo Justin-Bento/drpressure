@@ -2,13 +2,19 @@
 import Heading from '../components/Heading.astro';
 import Layout from '../layouts/Layout.astro';
 import { stats, team, values } from '../lib/data';
+
+// KeyStatic Logic to render data for about page.
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+const reader = createReader('', keystaticConfig);
+const about = await reader.singletons.Aboutpage.read();
 ---
 
 <Layout
   description="Find more our history, values, mission and more. We are a group of people who share the same values."
   title="About · Stone"
 >
-  <Heading title="About" subtext="Our cleaning refreshes faded concrete to its original color." />
+  <Heading title="About" subtext={about.headline} />
   <section class="py-16 sm:py-20">
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
