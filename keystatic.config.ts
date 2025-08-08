@@ -70,7 +70,7 @@ export default config({
       path: 'src/content/singleton/aboutpage',
       schema: {
         headline: fields.text({ label: 'About Summary' }),
-        mission: fields.text({ label: 'Our Mission', multiline: true }),
+        mission: fields.markdoc({ label: 'Our Mission' }),
         years: fields.date({
           label: 'Event date',
           description: 'The date of the event',
